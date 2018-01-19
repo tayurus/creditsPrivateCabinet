@@ -1,0 +1,166 @@
+.header {
+    background-color: #262626;
+    padding: 5px 0px;
+}
+
+.header__wrapper {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    margin: auto;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header__logo img{
+    margin-right: 10px;
+}
+
+.header__title {
+    color: #ffffff;
+    font-family: "Montserrat - Regular";
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header__menuIcon{
+    display: none;
+    width: 35px;
+    cursor: pointer;
+}
+
+.header__menuIcon div{
+    height: 3px;
+    background-color: #fff;
+}
+
+.header__menuIcon div:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.header__menu {
+    width: 788px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header__item {
+    color: #ffffff;
+    font-family: "Montserrat - Semi Bold";
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.header__item:hover{
+    color: #9a9a9a;
+}
+
+.header__item_img{
+    
+}
+
+.header__item:hover > img{
+    transform: scale(1.1);
+}
+
+.header__item-hasSubmenu{
+    display: block;
+}
+
+.header__item-wrapper{
+    position: relative;
+}
+
+.header__submenu{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+}
+
+.header__submenu_width_100{
+    width: 100px;
+}
+
+.header__submenu > .header__item{
+    display: block;
+    text-align: center;
+    color: #000;
+    padding: 5px 20px;
+}
+
+.header__submenu > .header__item:hover{
+    color:tomato;
+}
+
+.header__lang {
+    outline: none;
+    background-color: #262626;
+    color: #ffffff;
+    font-family: "Montserrat - Semi Bold";
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.header__lang option[value="rus"]{
+    background: url("img/flag_rus.svg") no-repeat left center;
+    background-size: 12px;
+}
+
+@media (max-width:1020px), (max-device-width:1020px) {
+    .header__title{
+        font-size: 20px;
+    }
+
+    .header__menu{
+        width: 600px;
+    }
+
+    .header__item{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:764px), (max-device-width:764px) {
+    .header__wrapper{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:590px), (max-device-width:590px) {
+    .header__wrapper{
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .header__submenu{
+        position: static;
+    }
+
+    .header__menu {
+        width: auto;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .header__menuIcon{
+        display: block;
+    }
+
+    .header__lang{
+        margin: 15px auto 0px auto;
+    }
+}
