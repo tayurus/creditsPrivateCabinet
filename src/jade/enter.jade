@@ -1,0 +1,33 @@
+include ../blocks/head/head.jade 
+body
+    include ../blocks/header/header.jade
+    
+    .container
+        .title
+            h2.title__text РЕГИСТРИРУЙТЕСЬ В CREDITS WHITELIST И УЧАСТВУЙТЕ В ICO
+            .title__subtext.title__subtext_textAlign_left.title__subtext_notBold
+                ul.title__ul
+                    li Первые участники, желающие участвовать в Whitelist, должны зарегистрироваться на сайте.
+                    li Участники с небольшими платежами будут проведены первыми
+                    li Нам выдано юридическое заключение из США и Сингапура о признании CREDITS - электронным токеном.
+                    li CREDITS утверждены для продажи для граждан всех стран, включая США и Сингапур.
+                    li Система KYC (Know Your Customer - требует идентефикации, включающую имя, адрес и официальный документ) введена для участников с 10 Ethers и более.
+                    li Нет необходимости проходить детальную проверку при покупке менее 10 Ethers.
+                    li Участникам необходимо предоставить счет Ethereum для расчета. При его непредоставлении, ваш смарт контракт не будет исполнен и вы не сможете участвовать в ICO.
+        
+        .title 
+            h2.title__text Введите ваши данные
+                    
+        .input-text.input-text_margin_auto.input-text_marginTop_30
+            input(type=text, name=wallet, placeholder='Адрес почты', class='input-text__input')
+            
+        .input-text.input-text_margin_auto.input-text_marginTop_30
+            .input-text__title Создайте пароль (минимум 8 знаков) 
+            input(type=text, required name=summ, placeholder='Пароль', class='input-text__input')
+            
+        button.button.button_block.button_margin_auto.button_marginTop_40 Войти
+        
+        button.button.button_block.button_margin_auto.button_marginTop_40.button_background_red.button_border_none.button_marginBottom_20(type="submit") Зарегистрироваться
+        
+        
+    include ../blocks/footer/footer.jade 

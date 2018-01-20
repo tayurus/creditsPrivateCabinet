@@ -1,0 +1,108 @@
+.row{
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row_maxWidth_760{
+    max-width: 760px;
+}
+
+.row_marginBottom_40{
+    margin-bottom: 40px;
+}
+
+.row_background_black{
+    background-color: #000;
+}
+
+.row_paddingVertical_40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.row_paddingHorizontal_20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.row_margin_auto{
+    margin: auto;
+}
+
+.row_wrap{
+    flex-wrap: wrap;
+}
+
+.row_width_435{
+    max-width: 435px;
+}
+
+.row_width_950{
+    max-width: 950px;
+}
+
+.row_alignItems_top{
+    align-items: start;
+}
+
+.row_alignItems_stretch{
+    align-items: stretch;
+}
+.row_alignItems_end{
+    align-items: flex-end;
+}
+
+.row_direction_col{
+    flex-direction: column;
+}
+
+.row_spaceAround{
+    justify-content: space-around;
+}
+
+.row__wrapper{
+
+}
+
+.row__wrapper_marginTop_20{
+    margin-top: 20px;
+}
+
+@media (max-width:1245px),(max-device-width:1245px) {
+    .row_spaceAround_1245{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:1050px),(max-device-width:1050px) {
+    .row_justifyContent_spaceAround_1050{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:945px),(max-device-width:945px) {
+    .row_adaptive_945{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:885px),(max-device-width:885px) {
+    .row_adaptive_885{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:670px),(max-device-width:670px) {
+    .row_justifyContent_center_670{
+        justify-content: center;
+    }
+}
+
+@media (max-width:465px),(max-device-width:465px) {
+    .row_wrap_465{
+        flex-wrap: wrap;
+    }
+}

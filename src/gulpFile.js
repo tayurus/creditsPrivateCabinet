@@ -6,7 +6,8 @@ var jade = require('gulp-jade');
 
 
 var srcPath = {
-    jadeSrc: ["jade/**/*.jade", "!jade/test.jade"],
+    jadePagesSrc: ["jade/**/*.jade"],
+    jadeBlocks: ["blocks/**/*.jade"],
     imgSrc: ["**/*.png", "**/*.jpg", "**/*.svg"],
     cssSrc: ["**/*.css", "!node_modules/**/*.css"],
     jsSrc: [  "**/*.js", "!gulpFile.js", "!node_modules/**/*.js"]
@@ -18,10 +19,14 @@ var distSrc = {
 }
 
 gulp.task('buildForLeha', function() {
-    gulp.src(srcPath.jadeSrc)
+    gulp.src(srcPath.jadePagesSrc)
     .pipe(jade({
     }))
-    .pipe(gulp.dest(distSrc.dist))
+    .pipe(gulp.dest(distSrc.dist));
+
+    gulp.src(srcPath.jadeBlocks).pipe(jade({
+
+    }));
 
     gulp.src(srcPath.cssSrc).pipe(rename({
         dirname: ''
@@ -46,11 +51,12 @@ gulp.task('buildForLeha', function() {
 });
 
 gulp.task('build', function() {
-    gulp.src(srcPath.jadeSrc)
+    gulp.src(srcPath.jadePagesSrc)
     .pipe(jade({
         pretty : "\t"
     }))
-    .pipe(gulp.dest(distSrc.dist))
+    .pipe(gulp.dest(distSrc.dist));
+
 
     gulp.src(srcPath.cssSrc).pipe(rename({
         dirname: ''

@@ -1,0 +1,61 @@
+
+.button{
+    color: #000000;
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    padding: 10px 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.button_borderRadius_30{
+    border-radius: 30px;
+}
+
+.button_marginTop_40{
+    margin-top: 40px !important;
+}
+
+.button_border_none{
+    border: none;
+}
+
+.button_background_black{
+    background-color: #000;
+    color: #fff;
+}
+
+.button_background_red{
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.button_maxWidth_300{
+    max-width: 300px;
+}
+
+.button_block{
+    display: block;
+}
+.button_margin_auto{
+    margin: auto;
+}
+
+.button_fontSize_14{
+    font-size: 14px;
+}
+
+.button_width_235{
+    width: 235px;
+}
+
+.button_marginBottom_20{
+    margin-bottom: 20px;
+}
+
+.button_marginHorizontal_20{
+    margin: 0px 20px;
+}

@@ -1,0 +1,47 @@
+.input-text {
+    max-width: 520px;
+    padding: 10px;
+}
+
+.input-text__title {
+    font-family: "Montserrat - Regular";
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.input-text__input {
+    width: 100%;
+    border: 1px solid #d4d4d5;
+    padding: 10px;
+    color: #000;
+}
+
+.input-text_margin_auto{
+    margin: auto;
+}
+
+.input-text_marginTop_30{
+    margin-top: 30px;
+}
+
+::placeholder {
+    color: #000;
+    font-family: "Montserrat - Regular";
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000;
+    font-family: "Montserrat - Regular";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #000;
+    font-family: "Montserrat - Regular";
+    font-size: 18px;
+    font-weight: 500;
+}

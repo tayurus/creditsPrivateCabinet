@@ -1,0 +1,93 @@
+.title{
+    font-family: "Montserrat - Regular";
+    text-align: center;
+    max-width: 840px;
+    margin: auto;
+}
+
+.title_textAlign_left{
+    text-align: left;
+}
+
+.title__text_textAlign_left{
+    text-align: left;
+    padding: 0px 10px;
+}
+
+.title__ul{
+    margin-left: 55px;
+    padding: 0px;
+}
+
+.title__subtext_textIndent_30{
+    text-indent: 30px;
+}
+
+.title_marginTop_70{
+    margin-top: 70px;
+}
+
+.title_marginBottom_30{
+    margin-bottom: 30px;
+}
+
+.title__text{
+    line-height: 24px;
+    font-size: 28px;
+    padding: 0px 10px;
+    line-height: 30px;
+}
+
+.title__text_hover_tomato:hover{
+    color: tomato;
+}
+
+.title__text_fontSize_20{
+    font-size: 20px;
+}
+
+.title__text_lineHeight_30{
+    line-height: 30px;
+}
+
+.title__text_color_white, .title__subtext_color_white{
+    color: #fff;
+}
+
+.title__text_marginBottom_20{
+    margin-bottom: 20px;
+}
+
+.title__text_bold{
+    font-weight: bold;
+}
+
+.title__subtext{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+
+.title__subtext_lineHeight_30{
+    line-height: 30px !important;
+}
+
+.title__subtext_textAlign_left{
+    text-align: left;
+    line-height:20px;
+}
+
+.title__subtext_notBold{
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+.title_maxWidth_670{
+    max-width: 670px;
+}
+
+.title_margin_0{
+    margin: 0px;
+}

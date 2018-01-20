@@ -1,0 +1,82 @@
+include ../blocks/head/head.jade 
+body
+    include ../blocks/header/header.jade
+    
+    .container
+        .title
+            h2.title__text Необходимая информация для участия в ICO
+            .row.container__label.container__label_attention
+                .container__label_arrow
+                .container__label Ваша сумма превышает 10 ETH, пожалуйста, внесите дополнительные данные.
+                .container__label_arrow
+        
+        form
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Страна проживания*
+                select(name='wallet', class='input-text__input')
+                    option(value='rus') Россия
+                    option(value='usa') Америка
+                    
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Счет Ethereum для расчета*
+                input(type=text, name=wallet, placeholder='0x000000....', class='input-text__input')
+                
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Ваша потенциальная сумма вклада ETH (минимум 0.01)* 
+                input(type=text, required name=summ, placeholder='Введите сумму', class='input-text__input')
+                
+            .title
+                h2.title__text Документы
+                h3.title__subtext
+                    |Загрузите копию паспорта или иного документа удостоверяющего личность (водительские права). Изображение отсканированное и четкое.
+            input.button.button_margin_auto.button_block.button_fontSize_14(type="file") 
+            
+            .title
+                h2.title__text Личная информация
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Имя* 
+                input(type=text, required name=summ, placeholder='Введите сумму', class='input-text__input')
+                
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Фамилия* 
+                input(type=text, required name=secondName, placeholder='Введите фамилию', class='input-text__input')
+                
+                
+            .title
+                h2.title__text Адрес
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Область/Регион/Провинция*
+                input(type=text, required name=region, placeholder='Введите область', class='input-text__input')
+                
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Город
+                input(type=text, name=secondName, placeholder='Введите город', class='input-text__input')
+                
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Улица
+                input(type=text, name=street, placeholder='Введите улицу', class='input-text__input')
+                
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Номер дома
+                input(type=text, name=houseNumber, placeholder='Введите номер дома', class='input-text__input')
+                
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Почтовый индекс
+                input(type=text, name=index, placeholder='Введите номер дома', class='input-text__input')
+            
+            
+            .row.row_width_435.row_margin_auto.row_spaceAround.row_wrap.row_alignItems_end
+                div.row__wrapper_marginTop_20
+                    input(type="checkbox" id="accept" required)
+                    label(for="accept")
+                .profile-block__text Согласен с 
+                    a("href=#") правилами
+                    |,
+                    a("href=#") ICO Terms 
+                    |и 
+                    a("href=#") условиями
+            
+            button.button.button_block.button_margin_auto.button_marginTop_40.button_background_red.button_border_none(type="submit") Зарегистрироваться
+            
+            .container__label * - поля обязательные для заполения
+    include ../blocks/footer/footer.jade 

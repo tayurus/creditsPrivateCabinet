@@ -1,0 +1,39 @@
+.profile-block{
+    max-width: 470px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.profile-block__title{
+    color: #000000;
+    font-family: "Montserrat - Regular";
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0px;
+}
+.profile-block__text{
+    color: #6c6c6c;
+    font-family: "Montserrat - Regular";
+    font-size: 16px;
+    word-break: break-all;
+    padding: 0px 10px;
+}
+
+/* .profile-block__text */
+
+.profile-block__img{
+    max-width: 600px;
+    min-height: 200px;
+    max-height: 283px;
+    height: 65vw;
+    margin-bottom: 20px;
+    background-image: url("img/profile-block__img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.profile-block__text_paddingLeft_20{
+    padding-left: 20px;
+}

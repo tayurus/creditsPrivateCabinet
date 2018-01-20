@@ -1,0 +1,90 @@
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.container_margin_none{
+    margin: 0px;
+}
+
+.container__link{
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
+.container__label{
+    max-width: 800px;
+    width: 90%;
+    padding: 15px 30px;
+    color: #6c6c6c;
+    font-family: "Montserrat - Regular";
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.container__label_bold{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.container__label_arrow{
+    width: 18px;
+    height: 24px;
+    background: url("img/bottom_arrow.png") no-repeat center;
+    background-size: cover;
+}
+
+.container__label_attention{
+    background-color: #ff9797;
+}
+
+.container__link_marginBottom_35{
+    margin-bottom: 35px;
+}
+
+.container_background_black{
+    background-color: #262627;
+}
+
+.container_background_gray{
+    background-color: #dfdfdf;
+}
+
+.container_width_100{
+    max-width: 100%;
+}
+
+.container_maxWidth_480{
+    max-width: 480px;
+}
+
+
+.container_maxWidth_740{
+    max-width: 740px;
+}
+
+.container_paddingVertical_20{
+    padding: 20px 0px;
+}
+
+.container_paddingVertical_50{
+    padding: 50px 0px;
+}
+
+
+.container_background_introduction{
+    background: url("img/introduction.jpg") no-repeat center;
+    background-size: cover;
+}
+
+
+@media (max-width:1060px),(max-device-width:1060px) {
+    .container_maxWidth_480{
+        max-width: 90%;
+    }
+}
