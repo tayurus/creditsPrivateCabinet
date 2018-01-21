@@ -14,34 +14,38 @@ body
                     li Система KYC (Know Your Customer - требует идентефикации, включающую имя, адрес и официальный документ) введена для участников с 10 Ethers и более.
                     li Нет необходимости проходить детальную проверку при покупке менее 10 Ethers.
                     li Участникам необходимо предоставить счет Ethereum для расчета. При его непредоставлении, ваш смарт контракт не будет исполнен и вы не сможете участвовать в ICO.
-                    
-        .input-text.input-text_margin_auto.input-text_marginTop_30
-            .input-text__title Введите адрес электронной почты*
-            input(type=text, name=wallet, placeholder='Адрес почты', class='input-text__input')
+        form            
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Введите адрес электронной почты*
+                input(type=text, name=wallet, placeholder='Адрес почты', class='input-text__input')
+                .input-text__danger Check this field!
+                
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Создайте пароль (минимум 8 знаков) 
+                input(type=text, required name=summ, placeholder='Пароль', class='input-text__input')
+                .input-text__danger Check this field!
+                
+            .input-text.input-text_margin_auto.input-text_marginTop_30
+                .input-text__title Повторите пароль 
+                input(type=text, required name=summ, placeholder='Пароль', class='input-text__input')
+                .input-text__danger Check this field!
+                
+            .row.row_width_435.row_margin_auto.row_spaceAround.row_wrap.row_alignItems_end
+                div.row__wrapper_marginTop_20
+                    input(type="checkbox" id="accept" required)
+                    label(for="accept")
+                .profile-block__text.profile-block__text_margin_0 Согласен с 
+                    a("href=#") правилами
+                    |,
+                    a("href=#") ICO Terms 
+                    |и 
+                    a("href=#") условиями
+                .input-text__danger Check this field!
             
-        .input-text.input-text_margin_auto.input-text_marginTop_30
-            .input-text__title Создайте пароль (минимум 8 знаков) 
-            input(type=text, required name=summ, placeholder='Пароль', class='input-text__input')
+            button.button.button_block.button_margin_auto.button_marginTop_40.button_background_red.button_border_none(type="submit") Зарегистрироваться
             
-        .input-text.input-text_margin_auto.input-text_marginTop_30
-            .input-text__title Повторите пароль 
-            input(type=text, required name=summ, placeholder='Пароль', class='input-text__input')
-            
-        .row.row_width_435.row_margin_auto.row_spaceAround.row_wrap.row_alignItems_end
-            div.row__wrapper_marginTop_20
-                input(type="checkbox" id="accept" required)
-                label(for="accept")
-            .profile-block__text Согласен с 
-                a("href=#") правилами
-                |,
-                a("href=#") ICO Terms 
-                |и 
-                a("href=#") условиями
-        
-        button.button.button_block.button_margin_auto.button_marginTop_40.button_background_red.button_border_none(type="submit") Зарегистрироваться
-        
-        .container__label.container__label_bold
-            | Уже зарегистрированы?  <br/>
-            a("href=#", class="container__label_bold") Войдите по ссылке
+            .container__label.container__label_bold
+                | Уже зарегистрированы?  <br/>
+                a("href=#", class="container__label_bold") Войдите по ссылке
         
     include ../blocks/footer/footer.jade 

@@ -37,22 +37,17 @@ label {
 }
 
 input[type="checkbox"]+label:before {
-	display: flex;
-	justify-content: center;
-	align-items: center;
     width: 19px;
     height: 19px;
 	border-radius: 50px;
     content: "\00a0";
     display: inline-block;
-    background: #eeeeee;
+    background: red;
 }
 
 input[type="checkbox"]:checked+label:before {
-	display: flex;
-    align-items: center;
-    justify-content: center;
     background: #0093d7;
+	line-height: 18px;
     color: #fff;
     content: "\2713";
     text-align: center;

@@ -11,25 +11,29 @@ body
                 select(name='wallet', class='input-text__input')
                     option(value='rus') Россия
                     option(value='usa') Америка
+                .input-text__danger Check this field!
                     
             .input-text.input-text_margin_auto.input-text_marginTop_30
                 .input-text__title Счет Ethereum для расчета*
                 input(type=text, name=wallet, placeholder='0x000000....', class='input-text__input')
+                .input-text__danger Check this field!
                 
             .input-text.input-text_margin_auto.input-text_marginTop_30
                 .input-text__title Ваша потенциальная сумма вклада ETH (минимум 0.01)* 
                 input(type=text, required name=summ, placeholder='Введите сумму', class='input-text__input')
+                .input-text__danger Check this field!
         
             .row.row_width_435.row_margin_auto.row_spaceAround.row_wrap.row_alignItems_end
                 div.row__wrapper_marginTop_20
                     input(type="checkbox" id="accept" required)
                     label(for="accept")
-                .profile-block__text Согласен с 
+                .profile-block__text.profile-block__text_margin_0 Согласен с 
                     a("href=#") правилами
                     |,
                     a("href=#") ICO Terms 
                     |и 
                     a("href=#") условиями
+                .input-text__danger Check this field!
             
             button.button.button_block.button_margin_auto.button_marginTop_40.button_background_red.button_border_none(type="submit") Зарегистрироваться
     

@@ -12,12 +12,22 @@
     text-align: center;
     margin: 20px 0px;
 }
+
 .profile-block__text{
     color: #6c6c6c;
     font-family: "Montserrat - Regular";
     font-size: 16px;
-    word-break: break-all;
+    word-break: break-word;
     padding: 0px 10px;
+    margin-bottom: 10px;
+}
+
+.profile-block__text_margin_0{
+    margin: 0px;
+}
+
+.profile-block__text_tomato{
+    color:tomato;
 }
 
 /* .profile-block__text */

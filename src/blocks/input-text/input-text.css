@@ -9,12 +9,21 @@
     margin-bottom: 10px;
 }
 
+.input-text__danger{
+    font-family: "Montserrat - Regular";
+    font-weight: 700;
+    color: tomato;
+    text-align: center;
+    margin-top: 5px;
+}
+
 .input-text__input {
     width: 100%;
     border: 1px solid #d4d4d5;
     padding: 10px;
     color: #000;
 }
+
 
 .input-text_margin_auto{
     margin: auto;
